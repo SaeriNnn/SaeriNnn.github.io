@@ -33,14 +33,12 @@ function submitForm(event) {
     document.getElementById('questions-container').style.display = 'flex';
     
     // Start displaying questions
-    displayCat();
     displayQuestion();
 }
 
 // Function to display the current question
 function displayQuestion() {
-    const questionText = userNickname + ', ' + questions[currentQuestionIndex];
-    document.getElementById('question').innerText = questionText;
+    document.getElementById('question').innerText = questions[currentQuestionIndex];
     // Reset button styles and text
     document.getElementById('yes-button').innerText = 'Yes';
     document.getElementById('no-button').innerText = 'No';
