@@ -1,0 +1,100 @@
+/* style.css */
+
+body {
+    font-family: Arial, sans-serif; /* Fallback font family */
+    text-align: center; /* Center-align text */
+    margin: 0; /* Remove default margin */
+    background-color: #FADADD; /* Set background color to light pink */
+}
+
+#container {
+    display: flex; /* Use flexbox layout */
+    flex-direction: column; /* Stack elements vertically */
+    align-items: center; /* Center-align items horizontally */
+    justify-content: center; /* Center-align items vertically */
+    height: 100vh; /* Make the container full viewport height */
+}
+
+#image-container {
+    /* This container will hold the images */
+}
+
+#question {
+    font-family: Arial, sans-serif; /* Clean, readable font */
+    font-size: 52px; /* Set font size for the question */
+    font-weight: 600; /* Make text bold for readability */
+}
+
+#options {
+    margin-top: 20px; /* Add space above the options */
+}
+
+button {
+    padding: 10px 20px; /* Set padding for buttons */
+    margin: 0 10px; /* Set margin around buttons */
+    font-size: 26px; /* Set font size for buttons */
+    font-family: Arial, sans-serif; /* Clean, readable font */
+    font-weight: 600; /* Make text bold for readability */
+    background-color: #FB607F; /* Set button background color */
+    color: white; /* Set text color to white */
+    border: none; /* Remove button border */
+    cursor: pointer; /* Set cursor to pointer on hover */
+}
+
+/* Form Styles */
+#form-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+h1 {
+    font-family: Arial, sans-serif;
+    font-size: 48px;
+    color: #333;
+    margin-bottom: 30px;
+}
+
+#user-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 100%;
+    max-width: 400px;
+}
+
+input[type="text"] {
+    padding: 15px;
+    font-size: 18px;
+    font-family: Arial, sans-serif;
+    border: 2px solid #FB607F;
+    border-radius: 8px;
+    text-align: center;
+    background-color: #fff;
+    color: #333;
+}
+
+input[type="text"]::placeholder {
+    color: #ccc;
+}
+
+input[type="text"]:focus {
+    outline: none;
+    border-color: #ff1493;
+    box-shadow: 0 0 10px rgba(251, 96, 127, 0.5);
+}
+
+#user-form button {
+    padding: 12px 30px;
+    font-size: 20px;
+    margin-top: 10px;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+#user-form button:hover {
+    background-color: #ff1493;
+    transform: scale(1.05);
+}

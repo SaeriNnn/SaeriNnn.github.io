@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz!</title>
+    <link rel="stylesheet" href="style.css"> <!-- Link to external stylesheet -->
+</head>
+<body>
+    <div id="container">
+        <div id="image-container"></div> <!-- Container for displaying images -->
+        
+        <!-- Form Section -->
+        <div id="form-container">
+            <div id="text-container">
+                <h1>Before we start...</h1>
+                <form id="user-form" onsubmit="submitForm(event)">
+                    <input type="text" id="name-input" placeholder="What's your name?" required>
+                    <input type="text" id="nickname-input" placeholder="What do you like to be called?" required>
+                    <button type="submit">Lesgow</button>
+                </form>
+            </div>
+        </div>
+        
+        <!-- Questions Section -->
+        <div id="questions-container" style="display: none;">
+            <div id="text-container">
+                <div id="question"></div> <!-- Question -->
+                <div id="options">
+                    <button id="yes-button" onclick="selectOption('yes')">Yes</button> <!-- Yes button -->
+                    <button id="no-button" onclick="selectOption('no')">No</button> <!-- No button -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script> <!-- Link to external JavaScript file -->
+</body>
+</html>
